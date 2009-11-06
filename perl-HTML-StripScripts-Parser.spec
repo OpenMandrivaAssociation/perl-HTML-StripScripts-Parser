@@ -1,5 +1,5 @@
 %define upstream_name    HTML-StripScripts-Parser
-%define upstream_version 1.02
+%define upstream_version 1.03
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
