@@ -2,14 +2,14 @@
 %define upstream_version 1.03
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	XSS filter using HTML::Parser
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/HTML-StripScripts-Parser
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-Parser-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
