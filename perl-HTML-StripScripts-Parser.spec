@@ -1,15 +1,13 @@
 %define upstream_name    HTML-StripScripts-Parser
-%define upstream_version 1.03
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	1.03
+Release:	6
 
 Summary:	XSS filter using HTML::Parser
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/HTML-StripScripts-Parser
-Source0:	https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-Parser-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DRTECH/HTML-StripScripts-Parser-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ HTML is parsed into tags, and the HTML::StripScripts manpage for details of
 how to customise the way those tags are filtered.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -51,9 +49,7 @@ make test
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 1.20.0-1mdv2010.0
 + Revision: 405858
-- rebuild using %%perl_convert_version
-
-* Sat Jul 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.02-1mdv2009.0
+- rebuild using %1.03 Sat Jul 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.02-1mdv2009.0
 + Revision: 231922
 - import perl-HTML-StripScripts-Parser
 
